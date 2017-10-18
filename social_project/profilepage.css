@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+}
+
+nav,
+header,
+footer {
+    display: block;
+    overflow: hidden;
+}
+
+.containeracc {
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+
+}
+
+.containercss {
+    width: 100%;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+    background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+}
+
+.heading {
+    font-family: 'Lobster';
+    font-size: 20px;
+
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 9px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+
+
+}
+
+ul.topnav li a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    min-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Amiri';
+    font-weight: 700;
+    transition: 0.4s;
+
+}
+
+ul.topnav li a:hover {
+    box-shadow: 0px 5px 4px grey;
+    background-color: rgba(0, 255, 255, 0.2);
+
+}
+
+ul.topnav li.signout {
+    float: right;
+}
+
+table {
+    border: 1px;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+
+}
+
+.card {
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    height: 70%;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+.card:hover {
+    box-shadow: 2px 2px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.col-sm-4 {
+    height: 35%;
+}
+
+.col-sm-8 {
+    height: 35%;
+}
+
+div.col-sm-8 p {
+    font-family: 'Josefin Sans';
+    font-size: 23px;
+}
+
+.btn-style {
+    font-family: 'Josefin Sans';
+    padding: 2%;
+    width: 60%;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.btn-style:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+div.btn-style a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+
+/***********ACCORDION************/
+
+.accordion {
+    background-color: #00CED1;
+    color: #fff;
+    cursor: pointer;
+    padding: 50px;
+    width: 100%;
+    height: 25%;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Amiri';
+    font-weight: 700;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
+button.accordion::after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active::after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0px;
+
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.panel p {
+    text-align: left;
+}
